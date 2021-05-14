@@ -6,7 +6,6 @@ import mdn
 from tensorflow.compat.v1.keras import layers
 from tensorflow.python.keras import activations
 from tensorflow_probability import distributions as tfd
-from tensorflow import keras
 from keras import backend as K
 from keras import activations, initializers
 import tensorflow_probability as tfp
