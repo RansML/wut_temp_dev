@@ -5,10 +5,12 @@ python:
   
 install:
   - pip install -r requirements.txt
+  - pip install pytest-cov
+  - pip install coveralls
   - pip install .
 
 script:
-  - pytest tests/
+  - pytest --cov-report=xml --cov=wut_temp_dev tests/
   
 after_success:
   - coveralls
