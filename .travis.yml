@@ -8,4 +8,4 @@ install:
   - pip install pytest-cov
 # command to run tests
 script:
-  - pytest WUT/tests/test_deterministic.py
+  - python tests.py
