@@ -5,13 +5,11 @@ cache: bundler
 python:
   - "3.6" 
   
-before_install:
-  - pip install -U pip
-  - python setup.py install
-  
 install:
   - pip install -r requirements.txt
+  - pip install codecov
+  - pip install pytest-cov
   - pip install -e .
 
 script:
-  - pytest
+  - pytest tests/
