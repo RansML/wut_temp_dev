@@ -2,8 +2,4 @@ language: python
 python:
   - "3.6"
 before_install:
-  - python --version
-  - pip install pip
   - pip install -r requirements.txt
-  - pip install codecov
-  - pip install pytest-cov
