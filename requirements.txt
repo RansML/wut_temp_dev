@@ -1,4 +1,3 @@
 numpy
 tensorflow==2.4.1
-tensorflow-probability --upgrade
 keras-mdn-layer
