@@ -13,6 +13,6 @@ install:
 # command to run tests
 script:
   - pytest --cov-report=xml --cov=deeptabular WUT/tests/
-
+# after success
 after_success:
   - codecov
