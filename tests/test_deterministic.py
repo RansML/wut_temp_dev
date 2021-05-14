@@ -56,4 +56,4 @@ def test_deterministic():
     print("Evaluate train:", regmodel1.evaluate(Xreg1, Yreg1))
     print("Evaluate test:", regmodel1.evaluate(Xreg1t, Yreg1t))
 
-    assert (regmodel1.evaluate(Xreg1, Yreg1) >= 0)
+    assert (regmodel1.evaluate(Xreg1t, Yreg1t) >= 0)
