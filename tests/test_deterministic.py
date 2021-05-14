@@ -1,10 +1,10 @@
 import numpy as np
 import tensorflow as tf
 
-def fn_test_simple():
+def test_simple():
     assert (10 < 55)
 
-def fn_test_deterministic():
+def test_deterministic():
     # Groundtruth function
     def groundtruth1(X):
         return np.sin(12 * X)
