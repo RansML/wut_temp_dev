@@ -52,7 +52,10 @@ print("X-Y predict shapes:", Xreg1q.shape, Yreg1q.shape)
 # plot1d_meanvar(Xreg1, Yreg1, Xreg1q, tf.expand_dims(Yreg1q,2), None, ylims)
 
 # Evaluate
-print("Evaluate train:", regmodel1.evaluate(Xreg1, Yreg1))
+acc_train = regmodel1.evaluate(Xreg1, Yreg1)
+acc_test = regmodel1.evaluate(Xreg1t, Yreg1t)
+print("Evaluate train:", )
 print("Evaluate test:", regmodel1.evaluate(Xreg1t, Yreg1t))
 
-
+assert acc_train >= 0
+assert acc_test >= 0
