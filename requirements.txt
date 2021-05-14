@@ -1,3 +1,2 @@
-numpy==1.18.1
+numpy
 tensorflow==2.4.1
-pytest
