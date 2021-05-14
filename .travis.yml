@@ -1,5 +1,14 @@
 language: python
 python:
-  - "3.6"
+  - "3.6" 
+# command to install dependencies
 install:
   - pip install -r requirements.txt
+  - pip install codecov
+  - pip install pytest-cov
+# command to run tests
+script:
+  - pytest --cov-report=xml --cov=deeptabular WUT/tests/
+
+after_success:
+  - codecov
