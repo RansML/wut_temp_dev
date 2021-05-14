@@ -8,7 +8,7 @@ install:
   - pip install pytest-cov
 # command to run tests
 script:
-  - pytest --cov-report=xml --cov=test_deterministic WUT/tests/
+  - pytest WUT/tests/
 
 after_success:
   - codecov
